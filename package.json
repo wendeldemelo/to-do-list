@@ -1,0 +1,41 @@
+{
+  "name": "to-do-list-e2e",
+  "version": "1.0.0",
+  "description": "Projeto de lista de tarefas com front e back integrado",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compose:up": "(cd app && docker-compose up -d --build)",
+    "compose:down": "(cd app && docker-compose down --remove-orphans)"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wendeldemelo/to-do-list-e2e.git"
+  },
+  "keywords": [
+    "todo-list"
+  ],
+  "author": "Wendel Melo <demelowendel@gmail.com>",
+  "devDependencies": {
+    "@testing-library/jest-dom": "5.15.0",
+    "@testing-library/react": "11.2.7",
+    "@testing-library/user-event": "12.8.3",
+    "axios": "^0.26.0",
+    "dotenv": "10.0.0",
+    "jest": "26.6.0",
+    "mocha": "9.2.0",
+    "mysql2": "2.3.3",
+    "sequelize": "^6.11.0",
+    "sequelize-cli": "^6.4.1"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "http-status-codes": "2.2.0",
+    "jsonwebtoken": "8.5.1"
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wendeldemelo/to-do-list-e2e/issues"
+  },
+  "homepage": "https://github.com/wendeldemelo/to-do-list-e2e#readme"
+}
