@@ -1,5 +1,5 @@
 const User = (sequelize, DataTypes) => {
-  const Users = sequelize.define('Users', {
+  const Users = sequelize.define('User', {
     id: { type: DataTypes.INTEGER, primaryKey: true, autoIncrement: true },
     firstName: { type: DataTypes.STRING, allowNull: false },
     lastName: { type: DataTypes.STRING, allowNull: false },
@@ -11,9 +11,9 @@ const User = (sequelize, DataTypes) => {
     
   },
   {
-    tableName: 'Users',
     underscored: true,
     timestamps: false,
+    tableName: 'Users',
   });
 
   return Users;
