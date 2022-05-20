@@ -2,11 +2,11 @@
   "name": "back-end",
   "version": "1.0.0",
   "description": "Backend do app Complete TodoList",
-  "main": "./src/api/server.js",
+  "main": "./server.js",
   "scripts": {
     "prestart": "npx sequelize-cli db:create && npx sequelize-cli db:migrate",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node ./src/server.js",
+    "start": "node ./server.js",
     "drop": "npx sequelize-cli db:drop",
     "seed": "npx sequelize-cli db:seed:all",
     "debug": "nodemon ./src/server.js",
@@ -15,6 +15,7 @@
   "author": "Wendel Melo <demelowendel@gmail.com>",
   "license": "ISC",
   "dependencies": {
+    "cors": "^2.8.5",
     "dotenv": "10.0.0",
     "eslint-config-trybe-backend": "1.0.3",
     "express": "4.17.1",
